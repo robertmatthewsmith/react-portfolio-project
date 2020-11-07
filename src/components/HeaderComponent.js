@@ -96,26 +96,26 @@ class Header extends Component {
           <Container fluid>
             <Row>
               <Col xs="3">
-                <Navbar outline color="primary">
+                <Navbar outline >
                   <NavbarToggler onClick={this.toggleNav} className="ml-2" />
                   <Collapse isOpen={this.state.isNavOpen} navbar>
-                    <Nav navbar>
-                      <NavItem>
-                        <NavLink>test</NavLink>
-                      </NavItem>
-                      <NavItem>
-                        <NavLink>test2</NavLink>
-                      </NavItem>
+                    <Nav className="navbar">
+                      <button className="navbar-toggler" type="button" data-toggle="collapse">
+                        <span className="navbar-toggler-icon"></span>
+                      </button>
+                       
+                      
+                      
                     </Nav>
                   </Collapse>
                 </Navbar>
               </Col>
               <Col  xs="6" className="text-center">
-                <h2>PetMatch</h2>
+                <h1>PetMatch</h1>
               </Col>
             <Col xs="2" className="ml-5">
             <span className="navbar-text ml-auto">
-                <Button outline onClick={this.toggleModal}>
+                <Button className="modBut" outline onClick={this.toggleModal}>
                   <i className="fa fa-sign-in fa-lg" /> Login
                 </Button>
               </span>
@@ -156,7 +156,7 @@ class Header extends Component {
                   Remember me
                 </Label>
               </FormGroup>
-              <Button type="button" value="submit" color="info">
+              <Button ClassName="modalBut" type="button" value="submit">
                 Login
               </Button>
             </Form>
@@ -171,7 +171,7 @@ class Header extends Component {
                 isOpen={this.state.isDropdown1Open}
                 toggle={this.toggleDropdown1}
               >
-                <DropdownToggle outline caret className="text-white">
+                <DropdownToggle outline className="dropBut">
                   Dogs
                 </DropdownToggle>
                 <DropdownMenu className="dropdownMenu">
@@ -185,7 +185,7 @@ class Header extends Component {
                 isOpen={this.state.isDropdown2Open}
                 toggle={this.toggleDropdown2}
               >
-                <DropdownToggle outline className="dropdownToggle"> Cats </DropdownToggle>
+                <DropdownToggle outline className="dropBut"> Cats </DropdownToggle>
                 <DropdownMenu className="dropdownMenu">
                   <DropdownItem>test1</DropdownItem>
                   <DropdownItem>test2</DropdownItem>
@@ -197,7 +197,7 @@ class Header extends Component {
                 isOpen={this.state.isDropdown3Open}
                 toggle={this.toggleDropdown3}
               >
-                <DropdownToggle >Other</DropdownToggle>
+                <DropdownToggle outline className="dropBut">Other</DropdownToggle>
                 <DropdownMenu className="dropdownMenu">
                   <DropdownItem>test1</DropdownItem>
                   <DropdownItem>test2</DropdownItem>
@@ -209,10 +209,13 @@ class Header extends Component {
                 isOpen={this.state.isDropdown4Open}
                 toggle={this.toggleDropdown4}
               >
-                <DropdownToggle color="secondary">Agencies</DropdownToggle>
+                <DropdownToggle outline className="dropBut">Agencies</DropdownToggle>
                 <DropdownMenu>
-                  <DropdownItem>test1</DropdownItem>
-                  <DropdownItem>test2</DropdownItem>
+                  <DropdownItem href="https://secure.waysidewaifs.org/site/SPageServer/">Wayside Waifs </DropdownItem>
+                  <DropdownItem href="https://kcpetproject.org/">KC Pet Project</DropdownItem>
+                  <DropdownItem href="http://fohari.org/">Friends of <br />Homeless Animals</DropdownItem>
+                  <DropdownItem href="https://www.aspca.org/">ASPCA</DropdownItem>
+                  
                 </DropdownMenu>
               </ButtonDropdown>
             </div>

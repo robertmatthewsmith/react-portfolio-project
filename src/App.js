@@ -2,19 +2,15 @@ import React, { Component } from 'react';
 
 import './index.css'
 import './App.css';
-import { DOGS } from './shared/dogs';
-import FeaturedDogs  from './components/HomeComponent';
-import Header from './components/HeaderComponent';
-import Footer from './components/FooterComponent';
+import Main from './components/MainComponent'
 
 
 class App extends Component {
+
   render() {
       return (
           <div className="App">
-           <Header/>
-           <FeaturedDogs />
-           <Footer />
+              <Main />
           </div>
       );
   }
