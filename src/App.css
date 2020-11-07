@@ -1,14 +1,10 @@
 
-
-
 body {
-
   font-family: "Comfortaa";
   background-color:#E724F1 ;
 }
 
 .jumbotron {
-  
   margin: 0 !important;
   padding: 65px !important;
   border: 0px !important;
@@ -31,8 +27,6 @@ h1 {
   padding: 20px;
   margin: 0px;
   border: 0px;
-
-
 }
 
 .modal-header{
@@ -46,7 +40,6 @@ h1 {
 
 .footer {
 font-family: "Confortaa";
-
 }
 
 .site-footer {
@@ -85,17 +78,13 @@ border-color: white !important;
 .dropBut {
   border-color: white !important;
   color: white !important;
-  
 }
 
  
 .navB {
   color: white !important;
   background-color:#F67EDD !important;
-  border-color: white !important;
-  
-
-  
+  border-color: white !important; 
 }
 
 .dogClass {

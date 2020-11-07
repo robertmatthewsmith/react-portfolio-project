@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { DOGS } from '../shared/dogs';
-//import FeaturedDogs  from './components/HomeComponent';
 import Header from './HeaderComponent';
 import Footer from './FooterComponent';
 import FeaturedDirectory from './DogDirectory';
